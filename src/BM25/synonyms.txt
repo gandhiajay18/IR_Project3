@@ -1,0 +1,51 @@
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#-----------------------------------------------------------------------
+#some test synonym mappings unlikely to appear in real input text
+aaafoo => aaabar
+bbbfoo => bbbfoo bbbbar
+cccfoo => cccbar cccbaz
+fooaaa,baraaa,bazaaa
+
+# Some synonym groups specific to this example
+GB,gib,gigabyte,gigabytes
+MB,mib,megabyte,megabytes
+Television, Televisions, TV, TVs
+
+Russia,Putin,putin,russia,Russia's,Russian
+Россия,Russia
+Russland,Russlands,Russische
+Putin,путин,Россия
+Syria,syria,Arabs,Arab,Assad,rebel,syrische,Сирии
+Syrian,Сирии,Damaskus,syrien
+US,West,Obama,USA,U.S.,America,обаму
+Права человека,Human Rights
+Ammo,ammo,weapons,missile,munition,weaponry,arms,guns
+refugee,migrant,refugees,Flüchtling,беженец,беженцев
+Airbnb,Instacart,Kickstarter,companies,tech,tech companies,startup
+Flüchtlingskrise:,Flüchtlingskrise,Flüchtlinge,Flüchtlings
+беженцев,refugee,migrant,refugees,беженец,Flüchtling,Flüchtlings,Flüchtlings-Problematik
+ASYL-FLÜCHTLING,asylum refugees
+Terrorists,Террористы,Terroristen
+video,film,kino,video-botschaft
+Germany,Merkel,Angela Merkel,German,Германия,Deutschland
+Германия,Germany,Merkel
+interview,интервью
+war,conflict,Krieg,война
+drop,strike,bomb,bombing,dropped,bombed,Drop,Dropped,Airstrike,Air-strike,bombs,defence,air drops,air-safety,air safety,bombardiert
+
+#notice we use "gib" instead of "GiB" so any WordDelimiterFilter coming
+#after us won't split it into two words.
+
+# Synonym mappings can be used for spelling correction too
+pixima => pixma
